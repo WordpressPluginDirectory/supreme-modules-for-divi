@@ -50,7 +50,6 @@ class Dsm_Supreme_Modules_For_Divi_Public {
 
 		$this->plugin_name = $plugin_name;
 		$this->version     = $version;
-
 	}
 
 	/**
@@ -118,7 +117,6 @@ class Dsm_Supreme_Modules_For_Divi_Public {
 
 			wp_add_inline_style( 'dsm-easy-theme-builder-style', $dsm_tb_header_css );
 		}
-
 	}
 
 	/**
@@ -196,7 +194,6 @@ class Dsm_Supreme_Modules_For_Divi_Public {
 		wp_register_script( 'dsm-menu', plugin_dir_url( __DIR__ ) . 'includes/modules/Menu/frontend.min.js', array( 'jquery' ), DSM_VERSION, true );
 
 		// Divi Assets.
-		wp_register_script( 'dsm-magnific-popup', plugin_dir_url( __FILE__ ) . 'js/jquery.magnific-popup.js', array( 'jquery' ), DSM_PRO_VERSION, true );
+		wp_register_script( 'dsm-magnific-popup', plugin_dir_url( __FILE__ ) . 'js/jquery.magnific-popup.js', array( 'jquery' ), DSM_VERSION, true );
 	}
-
 }
