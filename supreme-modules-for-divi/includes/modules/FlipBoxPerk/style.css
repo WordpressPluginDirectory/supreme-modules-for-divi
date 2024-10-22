@@ -9,6 +9,12 @@
 .ios .dsm_flipbox {
     -webkit-transform: translate3d(0, 0, 0);
 }
+/* Safari Flickering bug*/
+.uiwebview .dsm_flipbox_child .et_pb_section_video_bg,
+.safari .dsm_flipbox_child .et_pb_section_video_bg {
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+}
 /*New divi icon update*/
 .dsm_flipbox_child .et_pb_button[data-icon]:not([data-icon=""]):after {
     content: attr(data-icon);
